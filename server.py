@@ -22,7 +22,7 @@ def server():
 				print("Data receiving...")
 				msg += data.decode()
 				print("Data sending...")
-				conn.send(f'{addr.encode()}, {data}')
+				conn.send(data)
 			print(msg)
 
 		except KeyboardInterrupt:
